@@ -2,6 +2,15 @@ from flask import Flask, render_template
 
 app =  Flask(__name__)
 
+
+post =[
+    {
+    'author':'Shoffy0',
+    'title':'komg kong',
+    'content':'story'
+     }
+]
+
 @app.route('/')
 @app.route('/home')
 def home():
