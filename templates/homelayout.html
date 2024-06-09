@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>welcome home</h1>
+
+    {% for post in posts %}
+        <h2>{{ post.title }}</h2>
+        <p>By {{ post.author }} on {{ post.date }}</p>
+        <p>It is a {{post.content}} type</p>
+    {% endfor %}
+{% endblock %}

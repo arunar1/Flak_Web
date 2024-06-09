@@ -33,5 +33,9 @@ def about():
 def contact():
     return render_template('contact.html')
 
+@app.route('/homelayout')
+def homelayout():
+    return render_template('homelayout.html', posts=posts)
+
 if __name__== '__main__':
     app.run(debug=True)
